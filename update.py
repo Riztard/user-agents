@@ -17,14 +17,14 @@ _os_field_include_patterns = [
     re.compile(r'^windows nt \d+\.\d+$', flags=re.IGNORECASE),
     re.compile(r'^macintosh$', flags=re.IGNORECASE),
     re.compile(r'^linux (x86_64|i686)$', flags=re.IGNORECASE),
+    re.compile(r'\biphone\b', flags=re.IGNORECASE),
+    re.compile(r'\bandroid\b', flags=re.IGNORECASE),
 ]
 _os_field_exclude_patterns = [
     re.compile(r'\bwindows mobile\b', flags=re.IGNORECASE),
     re.compile(r'\bxbox\b', flags=re.IGNORECASE),
-    re.compile(r'\biphone\b', flags=re.IGNORECASE),
     re.compile(r'\bipad\b', flags=re.IGNORECASE),
     re.compile(r'\bipod\b', flags=re.IGNORECASE),
-    re.compile(r'\bandroid\b', flags=re.IGNORECASE),
 ]
 
 _saved_user_agents = None
